@@ -15,14 +15,14 @@ First, I created a "Savings" CTE that:
 - Filters for only regular savings plans (using `is_regular_savings = 1`) with deposits higher than `0`.
 - Counts how many savings plans each customer has.
 - Sums up their total savings deposits.
-- Groups everything by customer ID.
+- Groups everything by owner ID.
 
 #### Investments CTE
 
 Next, I created an "Investments" CTE that follows the same pattern but:
 
-- Filters for investment funds instead (using `is_a_fund = 1`) to follow the question directive.
-- Counts investment plans and sums investment deposits.
+- Filtered for investment funds instead (using `is_a_fund = 1`) to follow the question directive.
+- Counted investment plans and summed investment deposits.
 
 #### Main Query
 
