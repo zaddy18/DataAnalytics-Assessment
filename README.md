@@ -11,11 +11,11 @@ To identify customers with both savings and investment products, I broke down th
 
 First, I created a "Savings" CTE that:
 
-- Joins the plans table with the savings account table.
-- Filters for only regular savings plans (using `is_regular_savings = 1`) with deposits higher than `0`.
-- Counts how many savings plans each customer has.
-- Sums up their total savings deposits.
-- Groups everything by owner ID.
+- Joined the plans table with the savings account table.
+- Filtered for only regular savings plans (using `is_regular_savings = 1`) with deposits higher than `0`.
+- Counted how many savings plans each customer has.
+- Summed up their total savings deposits.
+- Grouped everything by owner ID.
 
 #### Investments CTE
 
